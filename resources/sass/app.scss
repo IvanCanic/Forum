@@ -1,0 +1,96 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+//
+@import 'forum';
+
+@import 'form';
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    background: linear-gradient(to top right, $primary-color, $secondary-color);
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.vv-container {
+    width:80%;
+    margin: auto;
+}
+
+.vv-btn {
+    padding: 0.5rem 1rem;
+    color: $white;
+    border: none;
+    border-radius: $border-radius;
+}
+
+.vv-btn-primary {
+    background: $primary-color;
+    padding: 0.5rem 1rem;
+    color: $white;
+    border: none;
+    border-radius: $border-radius;
+}
+
+.vv-btn-secondary {
+    background: $secondary-color;
+    padding: 0.5rem 1rem;
+    color: $white;
+    border: none;
+    border-radius: $border-radius;
+}
+
+.vv-btn-delete {
+    background: transparent;
+    padding: 0.5rem 1rem;
+    color: $primary-color;
+    border: none;
+    border-radius: $border-radius;
+}
+
+.vv-btn:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.vv-error {
+    color: $red;
+}
+
+button {
+    background:transparent;
+    color: $secondary-color;
+    border: none;
+}
+
+/*input, textarea {
+    display:block;
+}*/
+
+.user-group {
+    color: $primary-color;
+    padding:$padding;
+}
+
+// Responsive 
+@import 'media';

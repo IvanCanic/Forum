@@ -1,0 +1,55 @@
+@media screen and (max-width:768px) {
+
+    html {
+        font-size: 12px;
+    }
+
+
+    .forum {
+
+        .forum-section {
+
+            .forum-information {
+                
+                flex: 0 0 49%;
+                display: grid;
+                grid-template-columns: 12fr;
+            
+                .ww-n {
+                    display:none;
+                }
+
+                .ww-m {
+                    grid-column: 1/13;
+
+                    a {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+
+            .forum-information.section {
+                    grid-template-columns: 12fr;
+            }
+            
+        } // end of forum section
+
+        .forum-thread {
+    
+            &-author {
+    
+                img {
+                    width: 100%;
+                    height: 100px;
+                }
+            }
+    
+            &-body {
+                padding:$padding;
+            }
+
+        } // end of forum thread
+
+    } // end of forum
+
+} // end of media query

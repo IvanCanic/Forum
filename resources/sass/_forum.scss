@@ -1,0 +1,149 @@
+.forum {
+    //padding: $padding;
+    margin-bottom: $section-margin;
+    color: $white-color;
+    max-width: 1024px;
+    margin: auto;
+    margin-bottom: $forum-margin;
+
+    .forum-head {
+        background: $primary-color;
+        padding: $padding;
+        color: $secondary-color;
+        display:flex;
+        justify-content: space-between;
+
+        a {
+            color: $secondary-color;
+        }
+    }
+
+    .forum-body {
+
+        background: $secondary-color;
+        padding: $padding;
+
+    } // end forum body
+
+    .forum-section {
+        margin-bottom:$section-margin;
+        display: flex;
+        justify-content: center;
+        gap: 2px;
+
+        a {
+            color: $secondary-color;
+        }
+
+        .forum-section-name {
+            background: $primary-color;
+            padding: $padding;
+            flex: 0 0 49%;
+        }
+
+        .forum-information {
+            flex: 0 0 49%;
+            display: grid;
+            grid-template-columns: 2fr 2fr 8fr;
+            gap:2px;
+            padding:0;
+            
+
+            div {
+                background: $primary-color;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .ww-m {
+                display:flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding:$padding;
+
+                a {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+
+        .forum-information.section {
+            grid-template-columns: 2fr 3fr 7fr;
+        }
+    }
+
+    .forum-thread {
+        display: grid;
+        grid-template-columns: 3fr 9fr;
+        gap:2px;
+        min-height: 200px;
+
+        &-author {
+            background: $white-color;
+            color:$secondary-color;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-around;
+            align-items: center;
+            padding:$padding;
+
+            img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+
+        &-body {
+            padding:$padding;
+            background: $white-color;
+            color:$black-color;
+            position: relative;
+
+        }
+    }
+
+    .post-footer {
+        position: relative;
+        min-height:30px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding:$padding;
+    }
+
+}
+
+.add-replies {
+    margin-top: $forum-margin;
+    padding: $padding;
+}
+
+.profile {
+
+    background: linear-gradient(to top left, $primary-color, $secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: $padding;
+
+    .profile-name {
+        margin-bottom: 1rem;
+    }
+
+    .profile-group{
+
+        margin-bottom: 1rem;
+    }
+
+    .profile-avatar {
+        width: 150px;
+        height: 150px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

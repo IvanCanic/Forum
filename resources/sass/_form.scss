@@ -1,0 +1,40 @@
+form {
+
+    max-width: 500px;
+    margin: auto;
+
+    .vv-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .vv-group-2 {
+        margin-bottom: 2rem;
+    }
+
+    input, textarea {
+        margin-bottom: 0.5rem;
+        border:none;
+        padding: $padding;
+        border-radius: $border-radius;
+    }
+
+    input:focus, textarea:focus {
+        border: 1px solid $secondary-color;
+    }
+}
+
+form.delete {
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    font-size: 1rem;
+
+}
+
+form.inline-form {
+
+    display:inline;
+}
